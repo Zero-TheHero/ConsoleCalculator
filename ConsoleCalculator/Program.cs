@@ -69,9 +69,9 @@ namespace ConsoleCalculator
                 value = Calculator.Add("-1, 1, -3");
                 Console.WriteLine(value.ToString());
             }
-            catch (Exception)
+            catch (Exception Ex)
             {
-                Console.WriteLine("Exception");
+                Console.WriteLine(Ex.Message);
             }
             
 
