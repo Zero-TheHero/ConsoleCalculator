@@ -64,9 +64,16 @@ namespace ConsoleCalculator
         static void Main(string[] args)
         {
             int value;
-
-            value = Calculator.Add("-1, 1, -3");
-            Console.WriteLine(value.ToString());
+            try
+            {
+                value = Calculator.Add("-1, 1, -3");
+                Console.WriteLine(value.ToString());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Exception");
+            }
+            
 
             Console.ReadLine();
         }
